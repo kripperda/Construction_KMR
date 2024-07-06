@@ -1,0 +1,21 @@
+
+public class ApplicationIBC {
+
+	public static void main(String[] args) {
+		
+		Building b1 = new Building("Ripperda House", "123 Main Street | Louisville, Kentucky 40201" , 2540, "Residential", "R1");
+		Business bu1 = new Business("Ripperda Business", "234 Main Street |Louisville, Kentucky 40201", 2000, "Business","B1",10);
+		Mall m1 = new Mall("Ripperda Mall", "4510 Mall St | Louisville, Kentucky 40201", 155470, "Business", "M1", 80, 250, 5000);
+		Apartment a1 = new Apartment("Ripperda Apartments" , "345 Main Street | Louisville, Kentucky 40201" , 15400, "Residential" , "A1", 52, 55, true, 30, 520, true);
+		SingleFamilyHome sf1 = new SingleFamilyHome("Ripperda SF Homes", "456 Main Street | Louisville, Kentucky 40201", 2100, "Residential", "R1", 4, 3, true, true);
+		
+		//Printouts
+		System.out.println("Building Information\n" +b1.displayData()+"\n");
+		System.out.println("Business Information\n" +bu1.toString()+"\n");
+		System.out.println("Mall Information\n" +m1.displayData()+"\n");
+		System.out.println("Apartment Information\n" +a1.displayData()+"\n");
+		System.out.println("Single Family Home Information\n" +sf1.displayData()+"\n");
+
+	}//end main
+	
+}//end class
